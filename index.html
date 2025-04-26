@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src=" ./script.js " defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      
+    />
+  </head>
+
+  <body class="font-fig bg-[#28245F]">
+    <!-- Hero Section with Navbar -->
+    <section
+    class="relative h-screen flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('./assets/image.png')"
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+  
+    <!-- Navbar -->
+    <nav class="absolute top-0 w-full z-20">
+      <!-- Top Contact Info -->
+      <div class="bg-gray-800 bg-opacity-5 text-white text-sm py-3">
+        <div class="max-w-7xl mx-auto flex justify-end items-center space-x-6 px-4 text-white">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>info@almightyengineers.in</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Main Navbar -->
+      <div class="max-w-7xl mx-auto flex justify-between items-center py-2 px-4 bg-white">
+        <!-- Logo -->
+        <div class="flex items-center w-full max-w-[200px] sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px] xl:max-w-[300px]">
+          <img
+            src="./assets/Layer_1.svg"
+            alt="Logo"
+            class="w-full h-auto object-contain"
+          />
+        </div>
+        
+        
+  
+        <!-- Menu (Desktop) -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">HOME</a>
+          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">ABOUT US</a>
+          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">SERVICES</a>
+          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">CLIENTS</a>
+          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">TESTIMONIALS</a>
+          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">BLOG</a>
+          <a href="#" class="bg-red-600 bg-opacity-90 text-white px-5 py-2 rounded hover:bg-red-700 transition">GET IN TOUCH</a>
+        </div>
+  
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="md:hidden">
+          <label>
+            <div
+              class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
+              id="menu-toggle"
+            >
+              <input class="hidden peer" type="checkbox" />
+              <div
+                class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
+              ></div>
+              <div
+                class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
+              ></div>
+              <div
+                class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
+              ></div>
+            </div>
+          </label>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu (Hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-64 bg-white bg-opacity-90 shadow-md transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col space-y-8 p-8 z-40"
+      >
+        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">HOME</a>
+        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">ABOUT US</a>
+        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">SERVICES</a>
+        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">CLIENTS</a>
+        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">TESTIMONIALS</a>
+        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">BLOG</a>
+        <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition text-center">GET IN TOUCH</a>
+      </div>
+    </nav>
+  
+    <!-- Hero Content -->
+    <div class="relative flex flex-col items-center justify-center w-full h-full px-4 text-center z-10 " data-aos="fade-right">
+      <!-- Big Background Text -->
+      <h1
+  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+         text-[50px] sm:text-[80px] md:text-[120px] lg:text-[150px] 
+         xl:text-[180px] 2xl:text-[200px] 
+         uppercase font-extrabold stroke-text tracking-widest opacity-50 select-none
+         max-w-full overflow-hidden text-center" >
+  Electrician
+</h1>
+
+  
+      <!-- Main Foreground Content -->
+      <div class="space-y-5  " data-aos="fade-up">
+        <h2
+          class="text-lg sm:text-xl md:text-2xl font-light text-white tracking-widest mt-60 font-erq"
+        >
+          WE HELP YOU ELECTRICAL SERVICES
+        </h2>
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight"
+        >
+          WE BUILD
+          <span class="text-teal-400 font-gwen">Quality</span> <br />
+          ELECTRICIAN<span class="text-red-600">.</span>
+        </h1>
+        <a
+          href="#"
+          class="mt-6 inline-block border bg-transparent text-white font-light px-6 py-3 rounded hover:bg-gray-200 transition"
+        >
+          DISCOVER MORE
+        </a>
+      </div>
+    </div>
+  
+    <!-- Carousel Arrows -->
+    <div class="absolute bottom-1 right-10 flex space-x-0 z-10 ">
+      <button
+        class="bg-red-600 text-white p-2  hover:bg-red-700 transition flex items-center justify-center w-20 h-10"
+      >
+        <i class="fas fa-arrow-left text-xl"></i>
+      </button>
+      <button class="border  text-red-600 p-2  bg-white hover:bg-red-600 hover:text-white transition flex items-center justify-center w-20 h-10">
+        <i class="fas fa-arrow-right text-xl"></i>
+      </button>
+    </div>
+  </section>
+  
+  <section class="py-16 bg-gray-50 flex items-center justify-center rounded-t-[3vw] overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      <!-- Text Content -->
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 relative z-10 "  data-aos="fade-right">
+        <h1 class="absolute left-1 transform -translate-x-1/10 -translate-y-1/2 text-[40px] md:text-[80px] uppercase font-extrabold stroke-text tracking-widest opacity-20 select-none">
+          About Us
+        </h1>
+        <h2 class="text-sm text-teal-600 uppercase tracking-wide mb-2">About Us</h2>
+        <h1 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">
+          Outstanding Residential & Commercial Services.
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <p class="text-gray-600 mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#" class="inline-block bg-red-500 text-white py-3 px-6 rounded-lg hover:bg-red-600 transition">
+          Discover More
+        </a>
+      </div>
+  
+      <!-- Image Content -->
+      <div class="md:w-1/2 relative flex justify-center" data-aos="fade-left">
+        <div class="relative w-full h-auto flex justify-center items-center">
+          <!-- Larger Image -->
+          <img src="./assets/worker2.svg" alt="Electrician working" class="w-full md:w-[75%] h-auto object-cover rounded-2xl shadow-lg">
+          <!-- Smaller Image -->
+          <img src="./assets/worker1.svg" alt="Electrician working" class="absolute -left-10 top-1/3 w-[50%] sm:w-[35%] h-auto object-cover rounded-2xl shadow-lg border-4 border-white">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+      
+  <section class="py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center " data-aos="fade-left">
+      
+      <!-- Text Content -->
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 relative">
+        <h1 class="absolute left-1 transform -translate-x-1/5 -translate-y-1/2 text-[50px] sm:text-[90px] md:text-[100px] uppercase font-extrabold stroke-text tracking-widest opacity-20 select-none">
+          Services
+        </h1>
+        <h2 class="text-sm text-teal-600 uppercase tracking-wide mb-2">Services</h2>
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+          We are a Full Service Electrical Contractor.    
+        </h1>
+      </div>
+  
+      <!-- Paragraph Content -->
+      <div class="md:w-1/2 relative flex justify-center">
+        <p class="text-gray-600 text-lg sm:text-xl leading-relaxed">
+          We are dedicated to delivering high-quality residential and commercial services with a focus on customer satisfaction. 
+          Our experienced team ensures that every project is completed with precision and care. 
+          From small repairs to large installations, we handle it all professionally. 
+          Trust us to bring expertise and excellence to every task we undertake.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+  <section class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      
+      <!-- Left Side -->
+      <div class="flex flex-col gap-6 md:w-1/3">
+        
+        <!-- Card 1 -->
+        <div class="border-2 border-red-300 rounded-lg p-6 flex items-center gap-4 mx-auto md:ml-7" data-aos="flip-left">
+          <div class="w-12 h-12">
+            <img src="./assets/icon1.svg" alt="Icon" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Electrical Consultancy</h3>
+            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="border-2 border-red-300 rounded-lg p-6 flex items-center gap-4 mx-auto md:mr-7 " data-aos="flip-left">
+          <div class="w-12 h-12">
+            <img src="./assets/icon2.svg" alt="Icon" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Electrification</h3>
+            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="border-2 border-red-300 rounded-lg p-6 flex items-center gap-4 mx-auto md:ml-7" data-aos="flip-left">
+          <div class="w-12 h-12">
+            <img src="./assets/icon3.svg" alt="Icon" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Skilled WorkForce</h3>
+            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </div>
+        </div>
+      
+      </div>
+      
+      <!-- Center Image -->
+      <div class="relative md:w-1/3 flex justify-center my-8 md:my-0">
+        <img src="./assets/plumber.svg" alt="Worker" class="w-64 h-auto object-contain" />
+      </div>
+      
+      <!-- Right Side -->
+      <div class="flex flex-col gap-6 md:w-1/3">
+      
+        <!-- Card 4 -->
+        <div class="border-2 border-red-300 rounded-lg p-6 flex items-center gap-4 mx-auto md:mr-7" data-aos="flip-right">
+          <div class="w-12 h-12">
+            <img src="./assets/icon1.svg" alt="Icon" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Quality Assured</h3>
+            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </div>
+        </div>
+        
+        <!-- Highlighted Card (Timely Completion) -->
+        <div class="bg-indigo-900 text-white rounded-lg p-6 text-center mx-2 md:ml-7 shadow-xl transform hover:scale-105 transition-transform duration-100"  data-aos="flip-right">
+          <h3 class="text-2xl font-bold mb-2">Timely Completion</h3>
+          <a href="#" class="text-green-400 text-sm font-semibold underline">READ MORE</a>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="border-2 border-red-300 rounded-lg p-6 flex items-center gap-4 mx-auto md:mr-7"  data-aos="flip-right">
+          <div class="w-12 h-12">
+            <img src="./assets/icon1.svg" alt="Icon" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-blue-900">Reasonable prices</h3>
+            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+    
+    <!-- View All Button -->
+    <div class="flex justify-center mt-10">
+      <button class="bg-[#E8272D] hover:bg-red-600 text-white px-6 py-3 rounded-md font-bold">
+        VIEW ALL
+      </button>
+    </div>
+  </section>
+  
+
+
+  <section id="achievements-section" class="py-12 bg-[#28245F] text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-white mb-8">Our Achievements</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+        
+        <!-- First Achievement -->
+        <div class="flex flex-col items-center">
+          <p id="years-experience" class="text-6xl font-bold text-[#30AAE1]">0 </p>
+          <p class="text-sm text-white">Years Experience</p>
+        </div>
+        <div class="vertical-line"></div>
+
+        <div class="border-l border-gray-600 h-16 md:h-0 md:w-16"></div>
+  
+        <!-- Second Achievement -->
+        <div class="flex flex-col items-center">
+          <p id="installations" class="text-6xl font-bold text-[#30AAE1]">0</p>
+          <p class="text-sm text-white">Installation</p>
+        </div>
+        <div class="vertical-line"></div>
+
+        <div class="border-l border-gray-600 h-16 md:h-0 md:w-16"></div>
+  
+        <!-- Third Achievement -->
+        <div class="flex flex-col items-center">
+          <p id="years-experience-2" class="text-6xl font-bold text-[#30AAE1]">0</p>
+          <p class="text-sm text-white">Years Experience</p>
+        </div>
+        <div class="vertical-line"></div>
+
+        <div class="border-l border-gray-600 h-16 md:h-0 md:w-16"></div>
+  
+        <!-- Fourth Achievement -->
+        <div class="flex flex-col items-center">
+          <p id="installations-2" class="text-6xl font-bold text-[#30AAE1]">0</p>
+          <p class="text-sm text-white">Installation</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="py-10 bg-gray-50 flex items-center justify-center rounded-t-[3vw] overflow-hidden" >
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center" data-aos="fade-right">
+  
+      <!-- Text Content -->
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 relative mt-10">
+        <h1 class="absolute left-1 transform -translate-x-1/5 -translate-y-1/2 text-[12vw] sm:text-[15vw] md:text-[90px] uppercase font-extrabold stroke-text tracking-widest opacity-20 select-none">
+          Solutions
+        </h1>
+        <h2 class="text-sm text-teal-600 uppercase tracking-wide mb-2">Solutions</h2>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+          We are a Full Service Electrical Contractor.    
+        </h1>
+      </div>
+  
+      <!-- Paragraph Content -->
+      <div class="md:w-1/2 relative flex justify-center">
+        <p class="text-base sm:text-lg md:text-lg text-gray-600 leading-relaxed">
+          We are dedicated to delivering high-quality residential and commercial services with a focus on customer satisfaction. 
+          Our experienced team ensures that every project is completed with precision and care. 
+          From small repairs to large installations, we handle it all professionally. 
+          Trust us to bring expertise and excellence to every task we undertake.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section class="py-10 bg-white flex items-center justify-center overflow-hidden">
+    <div class="bg-white py-16 px-8">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    
+        <!-- Left: Image -->
+        <div class="flex-shrink-0 w-full lg:w-96 flex justify-center mb-8 lg:mb-0">
+          <img src="./assets/worker3.svg" alt="Electrician" class="w-full h-auto">
+        </div>
+    
+        <!-- Right: Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
+          
+          <!-- Card 1 -->
+          <div class="relative group h-56 sm:h-64 w-full rounded-lg overflow-hidden" data-aos="fade-down-right">
+            <img src="./assets/pic1.png" alt="Electrical Consultancy" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg text-center">
+              Electrical Consultancy
+            </div>
+          </div>
+    
+          <div class="text-center relative group h-56 sm:h-64 w-full rounded-lg overflow-hidden p-4 flex flex-col justify-center text-white" data-aos="fade-down-left">
+            <!-- Overlay with blue fade effect -->
+            <div class="absolute inset-0 bg-[#28245F] group-hover:bg-blue-500/50 transition-colors duration-300"></div>
+            
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background-image: url('./assets/pic4.png');"></div>
+          
+            <!-- Content -->
+            <h3 class="relative text-xl font-bold mb-2">Electrical Project planning</h3>
+            <p class="relative text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <a href="#" class="relative text-green-400 font-bold hover:underline">READ MORE</a>
+          </div>
+          
+          
+    
+          <!-- Card 3 -->
+          <div class="relative group h-56 sm:h-64 w-full rounded-lg overflow-hidden" data-aos="fade-up-right" >
+            <img src="./assets/pic2.svg" alt="Annual Maintenance" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg text-center">
+              Annual maintenance Contracts
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="relative group h-56 sm:h-64 w-full rounded-lg overflow-hidden" data-aos="fade-up-left">
+            <img src="./assets/pic3.png" alt="Maintenance Services" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg text-center">
+              Maintenance services
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- View All Button -->
+      <div class="flex justify-center mt-10">
+        <button class="px-6 py-3 border-2 border-[#5c469c] text-[#5c469c] font-semibold rounded hover:bg-[#5c469c] hover:text-white transition">
+          VIEW ALL SOLUTIONS
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+  <section class="py-16 bg-white flex items-center justify-center">
+    <div class="max-w-7xl mx-auto px-4 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        
+        <!-- Left Side -->
+        <div class="flex flex-col space-y-4">
+          <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">
+            Our Clients<span class="text-red-500">.</span>
+          </h2>
+          <a 
+            href="#" 
+            class="inline-block border border-red-500 text-red-500 font-semibold py-3 px-6 rounded-md hover:bg-red-500 hover:text-white transition w-max uppercase text-sm tracking-wide"
+          >
+            View All Clients
+          </a>
+        </div>
+  
+        <!-- Right Side: Carousel -->
+        <div class="relative overflow-hidden">
+          <div id="logoCarousel" class="flex space-x-6 animate-scroll">
+            <!-- Logo Boxes -->
+            <div class="flex-shrink-0 w-48 h-32 border rounded-md flex items-center justify-center bg-white">
+              <img src="./assets/client1.svg" alt="Client 1" class="h-16 object-contain">
+            </div>
+            <div class="flex-shrink-0 w-48 h-32 border rounded-md flex items-center justify-center bg-white">
+              <img src="./assets/client2.svg" alt="Client 2" class="h-16 object-contain">
+            </div>
+            <div class="flex-shrink-0 w-48 h-32 border rounded-md flex items-center justify-center bg-white">
+              <img src="./assets/client3.svg" alt="Client 3" class="h-16 object-contain">
+            </div>
+            <div class="flex-shrink-0 w-48 h-32 border rounded-md flex items-center justify-center bg-white">
+              <img src="./assets/client4.svg" alt="Client 4" class="h-16 object-contain">
+            </div>
+            <!-- Duplicate for smooth loop -->
+            <div class="flex-shrink-0 w-48 h-32 border rounded-md flex items-center justify-center bg-white">
+              <img src="./assets/client1.svg" alt="Client 1" class="h-16 object-contain">
+            </div>
+            <div class="flex-shrink-0 w-48 h-32 border rounded-md flex items-center justify-center bg-white">
+              <img src="./assets/client2.svg" alt="Client 2" class="h-16 object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* Horizontal scrolling animation for all screens */
+    @keyframes scroll-horizontal {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    /* Apply horizontal animation to carousel */
+    .animate-scroll {
+      animation: scroll-horizontal 20s linear infinite;
+    }
+  
+    /* Ensure horizontal layout for mobile view */
+    @media (max-width: 768px) {
+      #logoCarousel {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  </style>
+  
+  
+
+  <section class="relative h-screen bg-white overflow-hidden">
+    <!-- Background Image for Top Half -->
+    <div class="absolute top-0 left-0 right-0 h-1/2 bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/Rectangle.svg');"></div>
+  
+    <!-- Worker Image (Hidden on smaller screens) -->
+    <div class="absolute left-10 bottom-40 md:bottom-48 ml-20 z-10 hidden md:block" data-aos="fade-up"
+    data-aos-duration="2000">
+      <img 
+        src="./assets/worker4.svg" 
+        alt="Worker" 
+        class="w-72 md:w-96 object-cover rounded-2xl shadow-lg"
+      >
+    </div>
+  
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 h-full mr-1" data-aos="fade-left" >
+      <div class="flex flex-col h-1/2 justify-center items-center">
+        <!-- Heading -->
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Testimonials</h2>
+  
+        <!-- Testimonial Text -->
+        <div class="max-w-xl text-center text-gray-300 mb-6 px-4">
+          <p class="italic mb-4">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”
+          </p>
+          <div>
+            <h4 class="text-lg font-bold text-white">Liam James</h4>
+            <span class="text-green-400 text-sm">Clients</span>
+          </div>
+        </div>
+  
+        <!-- Arrows -->
+        <div class="flex space-x-6 justify-center mt-4">
+          <!-- Left Arrow -->
+          <button class="w-10 h-10 flex items-center justify-center bg-red-500 rounded-full hover:bg-red-600 transition">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <!-- Right Arrow -->
+          <button class="w-10 h-10 flex items-center justify-center bg-red-500 rounded-full hover:bg-red-600 transition">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Wire Image Bottom Right (Mobile Adjusted) -->
+    <img 
+      src="./assets/wire.svg" 
+      alt="Wire" 
+      class="absolute bottom-40 right-0 w-32 md:w-48 object-contain pointer-events-none sm:bottom-16"
+    >
+  </section>
+  
+  
+  
+  
+      
+  <section class="py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      
+      <!-- Text Content -->
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 relative" data-aos="fade-right">
+        <h1 class="absolute left-1 transform -translate-x-1/5 -translate-y-1/2 text-[100px] uppercase font-extrabold stroke-text tracking-widest opacity-20 select-none">
+           Blogs
+        </h1>
+        <h2 class="text-sm text-teal-600 uppercase tracking-wide mb-2">Our Blogs</h2>
+        <h1 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">
+          Our Latest Blog Posts.   
+        </h1>
+      </div>
+  
+      <!-- Paragraph Content -->
+      <div class="md:w-1/2 relative flex justify-center" data-aos="fade-left">
+        <p class="text-gray-600 text-lg leading-relaxed  md:text-left">
+          We are dedicated to delivering high-quality residential and commercial services with a focus on customer satisfaction. 
+          Our experienced team ensures that every project is completed with precision and care. 
+          From small repairs to large installations, we handle it all professionally. 
+          Trust us to bring expertise and excellence to every task we undertake.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+    
+    
+    
+      <section class="py-16 bg-gray-50 flex items-center justify-center" >
+        <div class="max-w-7xl mx-auto px-4" data-aos="zoom-in">
+          <!-- Blog Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src="./assets/blog1.svg" 
+                alt="Blog Post 1" 
+                class="w-full h-48 object-cover"
+              >
+              <div class="p-6">
+                <span class="text-red-500 text-sm">| ADMIN - 17 MARCH 2022</span>
+                <h3 class="text-xl font-bold text-blue-900 mt-2">How we can fix any problem in household things.</h3>
+                <a href="#" class="text-red-500 hover:underline mt-4 inline-block">Read More</a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src="./assets/blog2.svg" 
+                alt="Blog Post 2" 
+                class="w-full h-48 object-cover"
+              >
+              <div class="p-6">
+                <span class="text-red-500 text-sm">| ADMIN - 17 MARCH 2022</span>
+                <h3 class="text-xl font-bold text-blue-900 mt-2">How we can fix any problem in household things.</h3>
+                <a href="#" class="text-red-500 hover:underline mt-4 inline-block">Read More</a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src="./assets/blog3.svg" 
+                alt="Blog Post 3" 
+                class="w-full h-48 object-cover"
+              >
+              
+              <div class="p-6">
+                <span class="text-red-500 text-sm">| ADMIN - 17 MARCH 2022</span>
+                <h3 class="text-xl font-bold text-blue-900 mt-2">How we can fix any problem in household things.</h3>
+                <a href="#" class="text-red-500 hover:underline mt-4 inline-block">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- View All Blogs Button -->
+          <div class="text-center">
+            <a 
+              href="#" 
+              class="inline-block bg-red-500 text-white py-3 px-6 rounded-lg hover:bg-red-600 transition"
+            >
+              View All Blogs
+            </a>
+          </div>
+        </div>
+      </section>
+
+<div class="bg-white">
+
+
+      <footer class="bg-[#28245F] text-white pt-10 relative overflow-hidden rounded-t-3xl">
+        <!-- Logo -->
+  
+    <img src="./assets/logo.svg" alt="Almighty Engineers Logo" class="mx-auto w-40 md:w-80">
+    <br>
+    <hr class="border-gray-600 mb-5">
+
+  </div>
+      
+        <!-- Heading and Button -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+          <h2 class="text-4xl font-bold text-white">Let's Get in Touch!</h2>
+          <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md">CONTACT US</button>
+        </div>
+      
+        <!-- Divider -->
+        <hr class="border-gray-600 mb-10">
+      
+        <!-- Main Content -->
+        <div class="flex flex-col md:flex-row justify-around items-start text-left px-6 md:px-20 mb-10 gap-8">
+          <!-- Quick Links 1 -->
+          <div>
+            <h3 class="text-green-400 font-semibold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2 text-white">
+              <li>HOME</li>
+              <li>ABOUT US</li>
+              <li>SERVICES</li>
+              <li>CLIENTS</li>
+              <li>TESTIMONIALS</li>
+              <li>BLOG</li>
+            </ul>
+          </div>
+      
+          <!-- Quick Links 2 -->
+          <div>
+            <h3 class="text-green-400 font-semibold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2 text-white">
+              <li>HOME</li>
+              <li>ABOUT US</li>
+              <li>SERVICES</li>
+              <li>CLIENTS</li>
+              <li>TESTIMONIALS</li>
+              <li>BLOG</li>
+            </ul>
+          </div>
+      
+          <!-- Address -->
+          <div>
+            <h3 class="font-semibold mb-4 text-white">ADDRESS</h3>
+            <p class="mb-2 text-white">#14, Christ Layout, Vaddarapalaya, Hennur,<br>Kalyannagar Post, Bangalore - 560043</p>
+            <p class="mb-2 font-semibold text-white">PHONE</p>
+            <p class="mb-2 text-white">+91 98765 43210 | +91 98765 43210</p>
+            <p class="mb-2 font-semibold text-white">EMAIL</p>
+            <p class="text-white">info@almightyengineers.in</p>
+          </div>
+      
+          <!-- Wire Image -->
+          <div class="hidden md:block">
+            <img src="./assets/wire2.png" alt="Wire Image" class="w-48">
+          </div>
+        </div>
+      
+        <!-- Subscribe Form -->
+        <div class="flex flex-col md:flex-row justify-between items-center bg-[#2d2b61] px-6 md:px-20 py-6">
+          <p class="mb-4 md:mb-0 text-white">Subscribe our newsletter to get update information, news, insight or promotions.</p>
+          <div class="flex">
+            <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-md text-black">
+            <button class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-r-md">SUBSCRIBE</button>
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 px-6 md:px-20 py-4">
+          <p>Copyright © 2024 Best Properties. All Rights Reserved.</p>
+          <div class="flex space-x-4 mt-2 md:mt-0">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">FAQ</a>
+          </div>
+          <p class="mt-2 md:mt-0">Powered by <span class="text-blue-400">spydernet</span></p>
+        </div>
+      </footer>
+    </div>
+    <!-- Mobile Menu Toggle Script -->
+    
+    </script>
+  </body>
+</html>
