@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Almighty Engineers </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
     <script src=" ./script.js " defer></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -24,83 +26,81 @@
   >
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black opacity-10"></div>
-  
-    <!-- Navbar -->
-    <nav class="absolute top-0 w-full z-20">
-      <!-- Top Contact Info -->
-      <div class="bg-gray-800 bg-opacity-5 text-white text-sm py-3">
-        <div class="max-w-7xl mx-auto flex justify-end items-center space-x-6 px-4 text-white">
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-phone-alt"></i>
-            <span>+91 98765 43210</span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fas fa-envelope"></i>
-            <span>info@almightyengineers.in</span>
-          </div>
+   <!-- Navbar -->
+   <nav class="absolute top-0 w-full z-20">
+    <!-- Top Contact Info -->
+    <div class="bg-gray-800 bg-opacity-5 text-white text-sm py-3">
+      <div class="max-w-7xl mx-auto flex justify-end items-center space-x-6 px-4 text-white">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-phone-alt"></i>
+          <span>+91 98765 43210</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-envelope"></i>
+          <span>info@almightyengineers.in</span>
         </div>
       </div>
-  
-      <!-- Main Navbar -->
-      <div class="max-w-7xl mx-auto flex justify-between items-center py-2 px-4 bg-white">
-        <!-- Logo -->
-        <div class="flex items-center w-full max-w-[200px] sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px] xl:max-w-[300px]">
-          <img
-            src="./assets/Layer_1.svg"
-            alt="Logo"
-            class="w-full h-auto object-contain"
-          />
-        </div>
-        
-        
-  
-        <!-- Menu (Desktop) -->
-        <div class="hidden md:flex items-center space-x-6">
-          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">HOME</a>
-          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">ABOUT US</a>
-          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">SERVICES</a>
-          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">CLIENTS</a>
-          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">TESTIMONIALS</a>
-          <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">BLOG</a>
-          <a href="#" class="bg-red-600 bg-opacity-90 text-white px-5 py-2 rounded hover:bg-red-700 transition">GET IN TOUCH</a>
-        </div>
-  
-        <!-- Hamburger Menu (Mobile) -->
-        <div class="md:hidden">
-          <label>
+    </div>
+
+    <!-- Main Navbar -->
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-2 px-4 bg-white">
+      <!-- Logo -->
+      <div class="flex items-center w-full max-w-[200px] sm:max-w-[150px] md:max-w-[200px] lg:max-w-[250px] xl:max-w-[300px]">
+        <img
+          src="./assets/Layer_1.svg"
+          alt="Logo"
+          class="w-full h-auto object-contain"
+        />
+      </div>
+
+      <!-- Menu (Desktop) -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-black font-semibold hover:text-[#E8272D] transition">HOME</a>
+        <a href="#aboutus" class="text-black font-semibold hover:text-[#E8272D] transition">ABOUT US</a>
+        <a href="#services" class="text-black font-semibold hover:text-[#E8272D] transition">SERVICES</a>
+        <a href="#clients" class="text-black font-semibold hover:text-[#E8272D] transition">CLIENTS</a>
+        <a href="#testimonial" class="text-black font-semibold hover:text-[#E8272D] transition">TESTIMONIALS</a>
+        <a href="#blog" class="text-black font-semibold hover:text-[#E8272D] transition">BLOG</a>
+        <a href="#" class="bg-red-600 bg-opacity-90 text-white px-5 py-2 rounded hover:bg-red-700 transition">GET IN TOUCH</a>
+      </div>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="md:hidden">
+        <label>
+          <div
+            class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
+            id="menu-toggle"
+          >
+            <input class="hidden peer" type="checkbox" id="hamburger-checkbox" />
             <div
-              class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
-              id="menu-toggle"
-            >
-              <input class="hidden peer" type="checkbox" />
-              <div
-                class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
-              ></div>
-              <div
-                class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
-              ></div>
-              <div
-                class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
-              ></div>
-            </div>
-          </label>
-        </div>
+              class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
+            ></div>
+            <div
+              class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
+            ></div>
+            <div
+              class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
+            ></div>
+          </div>
+        </label>
       </div>
-  
-      <!-- Mobile Menu (Hidden by default) -->
-      <div
-        id="mobile-menu"
-        class="fixed top-0 right-0 h-full w-64 bg-white bg-opacity-90 shadow-md transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col space-y-8 p-8 z-40"
-      >
-        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">HOME</a>
-        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">ABOUT US</a>
-        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">SERVICES</a>
-        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">CLIENTS</a>
-        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">TESTIMONIALS</a>
-        <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">BLOG</a>
-        <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition text-center">GET IN TOUCH</a>
-      </div>
-    </nav>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div
+  id="mobile-menu"
+  class="fixed top-0 right-0 h-full w-64 bg-white bg-opacity-100 shadow-md transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col space-y-8 p-8 z-50 mt-20"
+>
+
+      <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">HOME</a>
+      <a href="#aboutus" class="text-gray-800 hover:text-[#E8272D] transition">ABOUT US</a>
+      <a href="#services" class="text-gray-800 hover:text-[#E8272D] transition">SERVICES</a>
+      <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">CLIENTS</a>
+      <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">TESTIMONIALS</a>
+      <a href="#" class="text-gray-800 hover:text-[#E8272D] transition">BLOG</a>
+      <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition text-center">GET IN TOUCH</a>
+    </div>
+  </nav>
   
     <!-- Hero Content -->
     <div class="relative flex flex-col items-center justify-center w-full h-full px-4 text-center z-10 " data-aos="fade-right">
@@ -151,7 +151,7 @@
     </div>
   </section>
   
-  <section class="py-16 bg-gray-50 flex items-center justify-center rounded-t-[3vw] overflow-hidden relative">
+  <section id="aboutus" class="py-16 bg-gray-50 flex items-center justify-center rounded-t-[3vw] overflow-hidden relative">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
       <!-- Text Content -->
       <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 relative z-10 "  data-aos="fade-right">
@@ -188,7 +188,7 @@
   
   
       
-  <section class="py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
+  <section id="services" class="py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center " data-aos="fade-left">
       
       <!-- Text Content -->
@@ -217,7 +217,7 @@
   
 
 
-  <section class="py-10 bg-white">
+  <section  class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
       
       <!-- Left Side -->
@@ -449,7 +449,7 @@
 
 
 
-  <section class="py-16 bg-white flex items-center justify-center">
+  <section id="clients" class="py-16 bg-white flex items-center justify-center">
     <div class="max-w-7xl mx-auto px-4 w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         
@@ -522,7 +522,7 @@
   
   
 
-  <section class="relative h-screen bg-white overflow-hidden">
+  <section id="testimonial" class="relative h-screen bg-white overflow-hidden">
     <!-- Background Image for Top Half -->
     <div class="absolute top-0 left-0 right-0 h-1/2 bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/Rectangle.svg');"></div>
   
@@ -583,7 +583,7 @@
   
   
       
-  <section class="py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
+  <section id="blog" class="py-10 bg-gray-50 flex items-center justify-center overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
       
       <!-- Text Content -->

@@ -1,12 +1,27 @@
 
 
-  const menuToggle = document.querySelector('#menu-toggle input');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  menuToggle.addEventListener('click', function () {
-    mobileMenu.classList.toggle('translate-x-full');
-    mobileMenu.classList.toggle('translate-x-0');
-  });
+const menuToggle = document.getElementById("menu-toggle");
+const menuCheckbox = menuToggle.querySelector("input");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuCheckbox.addEventListener("change", () => {
+  if (menuCheckbox.checked) {
+    mobileMenu.style.transform = "translateX(0)";
+  } else {
+    mobileMenu.style.transform = "translateX(100%)";
+  }
+});
+
+document.addEventListener("click", (e) => {
+  const menu = document.getElementById("mobile-menu");
+  const hamburger = document.getElementById("menu-toggle");
+
+  if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+    menu.style.transform = "translateX(100%)";  
+    menuCheckbox.checked = false;
+  }
+});
 
   function animateCounter(elementId, startValue, endValue, duration) {
     let startTime = null;
@@ -25,11 +40,9 @@
     requestAnimationFrame(updateCounter);
   }
 
-  // Create an Intersection Observer to trigger the animation when the section is in view
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Start the animation when the section is in view
         animateCounter('years-experience', 0, 20, 2000);  // Example: 20+ years experience
         animateCounter('installations', 0, 1100, 2000); // Example: 1100+ installations
         animateCounter('years-experience-2', 0, 20, 2000); // Repeat animation for second set
@@ -40,7 +53,7 @@
       }
     });
   }, {
-    threshold: 0.5  // Trigger when 50% of the section is visible in the viewport
+    threshold: 0.5 
   });
 
   // Start observing the section
@@ -53,3 +66,14 @@ AOS.init({
     once: true // Animation only triggers once
   });
   
+  const lenis = new Lenis({
+    duration: 0.5, // increase this value for even smoother scroll (1.5 seconds)
+    easing: (t) => Math.min(1, 1.001 - Math.pow(10, -30 * t)), // very smooth easing
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
