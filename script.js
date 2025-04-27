@@ -66,14 +66,4 @@ AOS.init({
     once: true // Animation only triggers once
   });
   
-  const lenis = new Lenis({
-    duration: 0.5, // increase this value for even smoother scroll (1.5 seconds)
-    easing: (t) => Math.min(1, 1.001 - Math.pow(10, -30 * t)), // very smooth easing
-  })
-
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-
-  requestAnimationFrame(raf)
+  
