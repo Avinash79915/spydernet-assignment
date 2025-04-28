@@ -29,19 +29,19 @@
 
   .vertical-line {
     width: 1px;
-    height: 100px; /* Adjust the height as needed */
-    background-color: gray; /* Or use border color like border: 1px solid gray */
+    height: 100px; 
+    background-color: gray; 
     margin: 10px;
   }
   #mobile-menu {
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
-    z-index: -1;  /* Initially behind other content */
+    z-index: -1; 
   }
   
   #menu-toggle-checkbox:checked + label + #mobile-menu {
     transform: translateX(0);
-    z-index: 50;  /* Bring it in front when active */
+    z-index: 50;  
   }
   html {
     scroll-behavior: smooth;

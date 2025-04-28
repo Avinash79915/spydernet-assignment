@@ -43,12 +43,12 @@ document.addEventListener("click", (e) => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        animateCounter('years-experience', 0, 20, 2000);  // Example: 20+ years experience
-        animateCounter('installations', 0, 1100, 2000); // Example: 1100+ installations
-        animateCounter('years-experience-2', 0, 20, 2000); // Repeat animation for second set
-        animateCounter('installations-2', 0, 1100, 2000); // Repeat animation for second set
+        animateCounter('years-experience', 0, 20, 2000); 
+        animateCounter('installations', 0, 1100, 2000); 
+        animateCounter('years-experience-2', 0, 20, 2000); 
+        animateCounter('installations-2', 0, 1100, 2000); 
         
-        // Stop observing after the animation has started
+       
         observer.unobserve(entry.target);
       }
     });
@@ -56,14 +56,14 @@ document.addEventListener("click", (e) => {
     threshold: 0.5 
   });
 
-  // Start observing the section
+  
   observer.observe(document.getElementById('achievements-section'));
 
-  // Initialize AOS
+  
 AOS.init({
-    duration: 1000, // Animation duration (ms)
-    easing: 'ease-in-out', // Easing function
-    once: true // Animation only triggers once
+    duration: 1000, 
+    easing: 'ease-in-out', 
+    once: true 
   });
   
   
